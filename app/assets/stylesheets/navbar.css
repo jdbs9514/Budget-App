@@ -1,0 +1,25 @@
+.navlogo {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: #3778c2;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.logout-button {
+  border: none;
+  background: none;
+  color: white;
+  margin-right: 15px;
+}
+
+.navbar-list-item {
+  color: white;
+  text-decoration: none;
+}
