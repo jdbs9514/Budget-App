@@ -1,2 +1,13 @@
 <div id="<%= dom_id payment %>">
+  <div class="mt-5">
+    <div class="border ms-5 me-5 rounded d-flex justify-content-around">
+      <%= link_to category_payment_path(@category, payment) do %>
+      <p>
+        <strong><%= payment.name %></strong>
+      </p>
+      <% end %>
+      <p>Date & time: <%= payment.created_at%></p>
+      <p>$ <%= payment.amount%></p>
+    </div>
+  </div>
 </div>

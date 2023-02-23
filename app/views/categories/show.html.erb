@@ -2,11 +2,11 @@
 
 <%= render @category %>
 
-<div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "See payments", category_payments_path(@category)%> |
-  <%= link_to "Back to categories", categories_path %>
+<div class="d-flex justify-content-around mt-5">
+  <%= link_to "Edit this category", edit_category_path(@category), class: "text-decoration-none text-black" %> |
+  <%= link_to "See payments", category_payments_path(@category), class: "text-decoration-none text-black"%> |
+  <%= link_to "Back to categories", categories_path, class: "text-decoration-none text-black" %>
 </div>
-<div>
-  <%= button_to "Destroy this category", @category, method: :delete %>
+<div class="d-flex justify-content-center mt-5">
+  <%= button_to "Destroy this category", @category, method: :delete, class: "border border-0" %>
 </div>

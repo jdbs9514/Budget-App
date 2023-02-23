@@ -6,12 +6,9 @@
 <div id="payments">
   <% @payments.each do |payment| %>
     <%= render payment %>
-    <p>
-      <%= link_to "Show this payment", payment %>
-    </p>
   <% end %>
 </div>
-<div class="d-flex justify-content-around">
+<div class="d-flex justify-content-around mt-5">
   <%= link_to "Back to category", category_path(@category) %>
   <%= link_to "New payment", new_category_payment_path %>
 </div>
