@@ -1,9 +1,11 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_category, only: %i[show edit update destroy]
 
   # GET /categories or /categories.json
   def index
-    @categories = Category.all
+    @user = current_user
+    @categories = @user.categories
   end
 
   # GET /categories/1 or /categories/1.json
@@ -19,7 +21,9 @@ class CategoriesController < ApplicationController
 
   # POST /categories or /categories.json
   def create
+    @user = current_user
     @category = Category.new(category_params)
+    @category.user = @user
 
     respond_to do |format|
       if @category.save
@@ -64,6 +68,6 @@ class CategoriesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def category_params
-    params.fetch(:category, {})
+    params.require(:category).permit(:name, :icon, :user_id)
   end
 end

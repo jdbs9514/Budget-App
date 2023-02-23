@@ -1,2 +1,13 @@
 <div id="<%= dom_id category %>">
+  <%= link_to category do %>
+  <div class="render-category">
+    <img class="cat-img" src="<%=asset_path("#{category.icon}.png")%>">
+    <% end %>
+    <p class="category-link">
+      <strong><%= category.name%></strong>
+    </p>
+    <p class="category-link">
+      $ <%= category.total_amount_category %>
+    </p>
+  </div>
 </div>
