@@ -78,7 +78,7 @@
 
 > Add a link to your deployed project.
 
-- [coming soon](https://yourdeployedapplicationlink.com)
+- [coming soon](https://budget-ap.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
