@@ -5,7 +5,7 @@ class PaymentsController < ApplicationController
   # GET /payments or /payments.json
   def index
     @category = Category.find(params[:category_id])
-    @payments = @category.payments
+    @payments = @category.payments.order(created_at: :desc)
   end
 
   # GET /payments/1 or /payments/1.json
