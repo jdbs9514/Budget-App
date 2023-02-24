@@ -1,0 +1,14 @@
+<% if user_signed_in? %>
+<div class="navlogo">
+  <%= image_tag ("logo.png"), class: 'logo' %>
+  <nav>
+    <div class="navbar-items">
+      <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "logout-button" %>
+    </div>
+  </nav>
+</div>
+<% else %>
+<div class="navlogo">
+  <%= image_tag ("logo.png"), class: 'logo' %>
+</div>
+<% end %>

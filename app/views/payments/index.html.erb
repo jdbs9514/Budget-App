@@ -1,14 +1,14 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Payments</h1>
+<div class="d-flex justify-content-center">
+  <h1>Payments</h1>
+</div>
 
 <div id="payments">
   <% @payments.each do |payment| %>
     <%= render payment %>
-    <p>
-      <%= link_to "Show this payment", payment %>
-    </p>
   <% end %>
 </div>
-
-<%= link_to "New payment", new_payment_path %>
+<div class="d-flex justify-content-around mt-5">
+  <%= link_to "Back to category", category_path(@category) %>
+  <%= link_to "New payment", new_category_payment_path %>
+</div>

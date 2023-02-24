@@ -23,13 +23,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_22_001227) do
     t.index ["user_id"], name: "index_categories_on_user_id"
   end
 
-  create_table "join_table_category_payment", force: :cascade do |t|
+  create_table "categories_payments", id: false, force: :cascade do |t|
     t.bigint "category_id", null: false
     t.bigint "payment_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_join_table_category_payment_on_category_id"
-    t.index ["payment_id"], name: "index_join_table_category_payment_on_payment_id"
   end
 
   create_table "payments", force: :cascade do |t|
@@ -60,7 +56,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_22_001227) do
   end
 
   add_foreign_key "categories", "users"
-  add_foreign_key "join_table_category_payment", "categories"
-  add_foreign_key "join_table_category_payment", "payments"
   add_foreign_key "payments", "users"
 end

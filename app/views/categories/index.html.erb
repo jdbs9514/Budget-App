@@ -1,14 +1,22 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Categories</h1>
+<div class="d-flex justify-content-center">
+  <h1>Categories</h1>
+</div>
 
 <div id="categories">
   <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
-  <% end %>
+    <div>
+      <%= render category %>
+      <% end %>
+    </div>
 </div>
 
-<%= link_to "New category", new_category_path %>
+<footer class="position-absolute bottom-0 start-50 translate-middle-x bg-success w-100">
+  <div class="container mt-4">
+    <div class="mt-4">
+      <div class=" d-flex justify-content-center mb-4 border p-3">
+        <%= link_to "New category", new_category_path, class: "text-white text-decoration-none" %>
+      </div>
+    </div>
+  </div>
+</footer>
