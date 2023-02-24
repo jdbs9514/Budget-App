@@ -4,6 +4,7 @@
   <nav>
     <div class="navbar-items">
       <%= button_to "Log out", destroy_user_session_path, method: :delete, class: "logout-button" %>
+      <%= link_to "Categories", categories_path, method: :delete, class: "logout-button text-decoration-none" %>
     </div>
   </nav>
 </div>
