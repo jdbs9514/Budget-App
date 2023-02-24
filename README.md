@@ -147,7 +147,6 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Josué Benavides**
 
@@ -162,7 +161,6 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Create API**
 - [ ] **Deploy**
@@ -183,7 +181,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+
 
 If you like this project do not forget to start the repository.
 
@@ -193,7 +191,6 @@ If you like this project do not forget to start the repository.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 [Microverse](https://www.microverse.org/) for giving this project guides.
 
